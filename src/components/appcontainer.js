@@ -4,7 +4,7 @@ import Row from "./Row";
 import Col from "./Col";
 import Card from "./Card";
 import SearchForm from "./Search";
-import MovieDetail from "./searchDetails";
+import MovieDetail from "./SearchDetails";
 import API from "../utils/API";
 
 class AppContainer extends Component {
@@ -32,7 +32,7 @@ class AppContainer extends Component {
     });
   };
 
-  // When the form is submitted, search the OMDB API for the value of `this.state.search`
+  
   handleFormSubmit = event => {
     event.preventDefault();
     this.searchMovies(this.state.search);
@@ -44,7 +44,7 @@ class AppContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for a Movie to Begin"}
+              heading={this.state.result.Title || "Search for Movies by title, genre, director or release yeat to Begin"}
             >
               {this.state.result.Title ? (
                 <MovieDetail
