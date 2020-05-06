@@ -54,6 +54,7 @@ class AppContainer extends Component {
                   genre={this.state.result.Genre}
                   released={this.state.result.Released}
                   plot={this.state.result.Plot}
+                  
                 />
               ) : (
                 <h3>No Results to Display</h3>
