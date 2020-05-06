@@ -7,6 +7,7 @@ function SearchDetails(props) {
       <h3>Director(s): {props.director}</h3>
       <h3>Genre: {props.genre}</h3>
       <h3>Released: {props.released}</h3>
+      <h3>Plot: {props.plot}</h3>
     </div>
   );
 }

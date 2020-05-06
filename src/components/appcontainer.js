@@ -44,7 +44,7 @@ class AppContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for Movies by title, genre, director or release yeat to Begin"}
+              heading={this.state.result.Title || "Search for Movies by title, genre, director or release year to Begin"}
             >
               {this.state.result.Title ? (
                 <MovieDetail
@@ -53,6 +53,7 @@ class AppContainer extends Component {
                   director={this.state.result.Director}
                   genre={this.state.result.Genre}
                   released={this.state.result.Released}
+                  plot={this.state.result.Plot}
                 />
               ) : (
                 <h3>No Results to Display</h3>
