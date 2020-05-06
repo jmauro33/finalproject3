@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Container from "./Container";
-import Row from "./Row";
-import Col from "./Col";
-import Card from "./Card";
+import Container from "./container";
+import Row from "./row";
+import Col from "./col";
+import Card from "./card";
 import SearchForm from "./Search";
 import MovieDetail from "./SearchDetails";
 import API from "../utils/API";
