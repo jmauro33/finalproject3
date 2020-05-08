@@ -2,10 +2,9 @@ import React from "react";
 
 function nav (){
   return (
-    <div>
-
-    <h1>MOVIE Searcher</h1>
-    </div>
+    <nav className="navbar navbar-light bg-light">
+    <span clasName="navbar-brand mb-0 h1">Movie Searcher</span>
+  </nav>
   );
 }
 
