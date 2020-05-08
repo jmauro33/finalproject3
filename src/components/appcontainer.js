@@ -46,7 +46,7 @@ class AppContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for Movies by title, genre, director or release year to Begin"}
+              heading={this.state.result.Title || "Search for Movies, TV Shows by title, genre, director or release year to Begin"}
             >
               {this.state.result.Title ? (
                 <SearchDetails

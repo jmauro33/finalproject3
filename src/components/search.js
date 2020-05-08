@@ -11,7 +11,7 @@ function SearchForm(props) {
           name="search"
           type="text"
           className="form-control"
-          placeholder="Search For Movies, TV Shows, Sports by title, genre, Director, or release year"
+          placeholder="Search For Movies, TV Shows by title, genre, Director, or release year"
           id="search"
         />
         
