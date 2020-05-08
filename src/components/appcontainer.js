@@ -4,7 +4,7 @@ import Row from "./row";
 import Col from "./col";
 import Card from "./card";
 import SearchForm from "./Search";
-import MovieDetail from "./SearchDetails";
+import SearchDetails from "./SearchDetails";
 import API from "../utils/API";
 
 class AppContainer extends Component {
@@ -47,7 +47,7 @@ class AppContainer extends Component {
               heading={this.state.result.Title || "Search for Movies by title, genre, director or release year to Begin"}
             >
               {this.state.result.Title ? (
-                <MovieDetail
+                <SearchDetails
                   title={this.state.result.Title}
                   src={this.state.result.Poster}
                   director={this.state.result.Director}
