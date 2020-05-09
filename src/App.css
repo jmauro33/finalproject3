@@ -42,7 +42,7 @@
   height:100px;
   background-color: aliceblue;
 }
-.card {
-
-  height:400px;
+.moviecard {
+  overflow:scroll;
+  height:600px;
 }
