@@ -36,11 +36,7 @@
     transform: rotate(360deg);
   }
 }
-.navbar {
-  height:75px;
-  text-align: center;
-  background-color: darkslateblue;
-}
+
 
 .card-header{
   height:100px;
