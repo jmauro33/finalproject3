@@ -24,8 +24,8 @@ class AppContainer extends Component {
       .then(res => this.setState({ result: res.data }))
       .catch(err => console.log(err));
   };
-  handleSaveMovie = movie => {
-    API.save(movie)
+  handleSaveMovie = movieController => {
+    API.save(movieController)
       .then(res => this.setState({ result: res.data }))
       .catch(err => console.log(err));
   }
