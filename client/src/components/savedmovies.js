@@ -13,15 +13,7 @@ class AppContainer extends Component {
     };
   
     
-    componentDidMount() {
-      this.searchMovies("");
-    }
-  
-    searchMovies = query => {
-      API.search(query)
-        .then(res => this.setState({ result: res.data }))
-        .catch(err => console.log(err));
-    };
+   
     handleSaveMovie = movieController => {
       API.save(movieController)
         .then(res => this.setState({ result: res.data }))
