@@ -1,15 +1,29 @@
 const router = require("express").Router();
 const movieController = require("../../controllers/movieController");
 
+router.post("/submit", (req, res) => {
+  console.log(req.body);
 
-router
-  .route("/")
-  .get(movieController.findAll)
-  .post(movieController.createMovie);
+  movieController.insert(req.body, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.send(data);
+    }
+  });
+});
 
-router
-  .route("/:id")
-  .get(movieController.findById)
+
+
+
+
+
+
+
+
+
+
+
 
 
 module.exports = router;
