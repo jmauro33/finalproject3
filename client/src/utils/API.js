@@ -7,9 +7,6 @@ export default {
     return axios.get(BASEURL + query + APIKEY);
   },
   save: function(movie) {
-    return axios.post("/posts", movie );
+    return axios.post("/movies/save", movie );
   }
-
-
-
 };

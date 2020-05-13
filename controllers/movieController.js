@@ -7,9 +7,9 @@ module.exports = {
     getMovie: function(query){
         return axios.get(BASEURL + query + APIKEY);
     },
-    createMovie: function(req, res){
-        return db.Movie.create(req.body.movie).then(function(result){
-            res.json(result);
+    createMovie: function(movieObject){
+        return db.Movie.create(movieObject).then(function(result){
+            return result
         })
     }
 };

@@ -11,8 +11,6 @@ class AppContainer extends Component {
       result: {},
       search: ""
     };
-  
-    
    
     handleSaveMovie = movieController => {
       API.save(movieController)
