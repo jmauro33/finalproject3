@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card(props) {
+function saveMovieCard(props) {
   return (
 
     <div className="savecard text-center">
@@ -12,4 +12,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default saveMovieCard;
