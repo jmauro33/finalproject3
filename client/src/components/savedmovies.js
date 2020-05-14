@@ -4,7 +4,7 @@ import Nav from "./nav";
 import Row from "./row";
 import Col from "./col";
 import Card from "./card";
-import SaveMovieCard from "./SaveMovieCard";
+import SaveMovieCard from "./Savemoviecard";
 import API from "../utils/API";
 
 class AppContainer extends Component {
