@@ -25,11 +25,7 @@ class AppContainer extends Component {
       });
     };
   
-    
-    handleFormSubmit = event => {
-      event.preventDefault();
-      this.searchMovies(this.state.search);
-    };
+  
   
     render() {
       return (
@@ -37,10 +33,7 @@ class AppContainer extends Component {
           <Nav></Nav>
           <Row>
             <Col size="md-8">
-              <Card>
-               
-               
-              </Card>
+              
             </Col>
             <Col size="md-4">
               <Card>
