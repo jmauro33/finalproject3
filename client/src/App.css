@@ -36,9 +36,10 @@
     transform: rotate(360deg);
   }
 }
-.nav {
+.navbar {
 
   height: 55px;
+  background-color: darkslategrey;
 }
 
 .card-header{
