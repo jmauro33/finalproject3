@@ -4,7 +4,7 @@ import Nav from "./nav";
 import Row from "./row";
 import Col from "./col";
 import Card from "./card";
-import SaveMovieCard from "./saveMovieCard";
+
 import API from "../utils/API";
 
 class AppContainer extends Component {
@@ -34,10 +34,10 @@ class AppContainer extends Component {
           <Nav></Nav>
           <Row>
             <Col size="md-8">
-              
+              <Card></Card>
             </Col>
             <Col size="md-4">
-              <saveMovieCard/>
+          
 
               
             </Col>
