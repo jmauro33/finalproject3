@@ -10,7 +10,7 @@ import API from "../utils/API";
 class AppContainer extends Component {
     state = {
       result: {},
-      search: ""
+      save: ""
     };
    
     handleSaveMovie = movieController => {
@@ -18,13 +18,7 @@ class AppContainer extends Component {
         .then(res => this.setState({ result: res.data }))
         .catch(err => console.log(err));
     }
-    handleInputChange = event => {
-      const value = event.target.value;
-      const name = event.target.name;
-      this.setState({
-        [name]: value
-      });
-    };
+   
   
   
   
