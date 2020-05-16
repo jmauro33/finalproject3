@@ -25,7 +25,17 @@ class AppContainer extends Component {
       .catch(err => console.log(err));
   };
   handleSaveMovie = movieController => {
-    API.save(movieController)
+
+
+    const movieData = { 
+         title: movieController.Title,
+         imageURL: movieController.Poster,
+         director: movieController.Director,
+         plot: movieController.Plot,
+         date: movieController.Released
+       }
+
+    API.save(movieData)
       .then(res => this.setState({ result: res.data }))
       .catch(err => console.log(err));
   }

@@ -6,7 +6,6 @@ const movieSchema = new Schema({
   imageURL: { type: String, required: true },
   director: { type: String, required: true },
   plot:{type:String, required: true},
-  
   date: { type: Date, default: Date.now }
 });
 

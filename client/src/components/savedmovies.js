@@ -9,33 +9,19 @@ import API from "../utils/API";
 
 class AppContainer extends Component {
     state = {
-      result: {},
-      save: ""
+      result: {}
     };
-   
-    handleSaveMovie = movieController => {
-      API.save(movieController)
-        .then(res => this.setState({ result: res.data }))
-        .catch(err => console.log(err));
+
+    componentDidMount() {
+      // call API.retrive
+      // update the state with the resutls
     }
-   
-  
-  
-  
+     
     render() {
       return (
         <Container>
           <Nav></Nav>
-          <Row>
-            <Col size="md-8">
-              <Card></Card>
-            </Col>
-            <Col size="md-4">
-          
-
-              
-            </Col>
-          </Row>
+          {/* loop and display the state.results */}
         </Container>
       );
     }

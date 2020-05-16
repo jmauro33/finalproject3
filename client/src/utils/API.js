@@ -8,5 +8,8 @@ export default {
   },
   save: function(movie) {
     return axios.post("/movies/save", movie );
+  },
+  retrive: function() {
+    return axios.get("/movie/save");
   }
 };
