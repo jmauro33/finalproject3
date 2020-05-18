@@ -11,6 +11,12 @@ module.exports = {
         return db.Movie.create(movieObject).then(function(result){
             return result
         })
+    },
+    retrieveMovie: function(){
+        return db.Movie.find({}).then(function(result){
+            console.log(result);
+            return result
+        })
     }
-    
+
 };

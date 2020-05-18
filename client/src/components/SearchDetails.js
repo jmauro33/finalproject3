@@ -8,9 +8,13 @@ function SearchDetails(props) {
       <h3>Genre: {props.genre}</h3>
       <h3>Released: {props.released}</h3>
       <h3>Plot: {props.plot}</h3>
-      <button onClick={props.handleSaveMovie} className="btn btn-primary">
+      {props.isSaved ?
+      null : 
+     <button onClick={props.handleSaveMovie} className="btn btn-primary">
           Save Movie
-        </button>
+        </button> 
+    }
+      
     </div>
   );
 }

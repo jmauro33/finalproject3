@@ -1,11 +1,11 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 function nav (){
   return (
     <nav className="navbar navbar-light bg-light">
     <span clasName="navbar-brand mb-0 h1">Movie Searcher</span>
-    <a class="nav-link" href="./savedmovies">Saved Movies</a>
-    <a class="nav-link" href="./Appcontainer.js">Home</a>
+    <Link class="nav-link" to="/savedmovies">Saved Movies</Link>
+    <Link class="nav-link" to="/">Home</Link>
   </nav>
   );
 }

@@ -4,7 +4,7 @@ import Nav from "./nav";
 import Row from "./row";
 import Col from "./col";
 import Card from "./card";
-
+import SearchDetails from "./SearchDetails";
 import API from "../utils/API";
 
 class AppContainer extends Component {
@@ -13,7 +13,11 @@ class AppContainer extends Component {
     };
 
     componentDidMount() {
-      // call API.retrive
+      console.log ("Test")
+      API.retrive().then((results)=>{
+      console.log(results);
+        this.setState({result:results.data})
+      })
       // update the state with the resutls
     }
      
@@ -21,7 +25,23 @@ class AppContainer extends Component {
       return (
         <Container>
           <Nav></Nav>
-          {/* loop and display the state.results */}
+          <Row>
+          {this.state.result.length > 0 ? this.state.result.map (movie => {
+            return (
+              <SearchDetails
+                title={movie.title}
+                src={movie.imageURL}
+                director={movie.director}
+                genre={movie.genre}
+                released={movie.released}
+                plot={movie.plot}
+                isSaved = {true}
+              />
+            ) 
+          }): (
+                <h3>No Results to Display</h3>
+              )}
+          </Row>
         </Container>
       );
     }

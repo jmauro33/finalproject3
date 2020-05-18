@@ -10,6 +10,6 @@ export default {
     return axios.post("/movies/save", movie );
   },
   retrive: function() {
-    return axios.get("/movie/save");
+    return axios.get("/movies/save");
   }
 };

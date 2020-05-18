@@ -8,6 +8,13 @@ router.post("/save", (req, res) => {
   res.json(movieController.createMovie(req.body))
 });
 
+router.get("/save",( req, res) => {
+  console.log("Test");
+  movieController.retrieveMovie().then(function(results){
+   res.json(results)  
+  })
+ 
+});
 
 
 module.exports = router;
