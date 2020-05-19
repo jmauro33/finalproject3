@@ -1,12 +1,12 @@
 import React from "react";
-import "./style.css";
+
 
 
 function DeleteBtn(props) {
   return (
-    <span className="delete-btn" {...props} role="button" tabIndex="0">
-      ✗
-    </span>
+    <button onClick={props.handleFormSubmit} className="btn btn-primary">
+    Remove from Saved Movie
+  </button>
   );
 }
 
