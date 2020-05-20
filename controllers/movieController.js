@@ -17,6 +17,10 @@ module.exports = {
             console.log(result);
             return result
         })
+    },
+    deleteMovie: function(){
+        
+
     }
     
 };

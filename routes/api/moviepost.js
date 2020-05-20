@@ -16,5 +16,10 @@ router.get("/save",( req, res) => {
  
 });
 
+router.delete("/save",( req, res,) => {
+  movieController.deleteMovie().then(function(results){
+    res.json(results)
+  })
+});
 
 module.exports = router;
