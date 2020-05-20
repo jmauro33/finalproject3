@@ -6,7 +6,7 @@ import Col from "./col";
 import Card from "./card";
 import SearchDetails from "./SearchDetails";
 import API from "../utils/API";
-
+import DeleteBtn from "./deleteBtn";
 class AppContainer extends Component {
     state = {
       result: {}

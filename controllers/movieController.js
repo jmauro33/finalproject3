@@ -19,7 +19,10 @@ module.exports = {
         })
     },
     deleteMovie: function(){
-        
+        return db.Movie.remove({}).then(function(result){
+            console.log(result);
+            return result
+        })
 
     }
     
