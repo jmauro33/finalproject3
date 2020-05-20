@@ -18,10 +18,13 @@ class AppContainer extends Component {
       console.log(results);
         this.setState({result:results.data})
       })
-      // update the state with the resutls
+      
     }
     handleDeleteMovie(){
-      
+      console.log ("Test")
+      API.delete().then((results)=>{
+        this.setState({result:results.data})
+      })
     }
 
 
