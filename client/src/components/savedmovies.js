@@ -20,9 +20,9 @@ class AppContainer extends Component {
       })
       
     }
-    handleDeleteMovie(){
-      console.log ("Test")
-      API.delete().then((results)=>{
+    handleDeleteMovie(id){
+      
+      API.delete(id).then((results)=>{
         this.setState({result:results.data})
       })
     }
@@ -43,8 +43,9 @@ class AppContainer extends Component {
                 released={movie.released}
                 plot={movie.plot}
                 isSaved = {true}
-                handleDeleteMovie={()=> this.handleDeleteMovie(this.state.result)}
+              
               />
+              
             ) 
           }): (
                 <h3>No Results to Display</h3>

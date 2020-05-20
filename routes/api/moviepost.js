@@ -16,8 +16,8 @@ router.get("/save",( req, res) => {
  
 });
 
-router.delete("/save",( req, res,) => {
-  movieController.deleteMovie().then(function(results){
+router.delete("/save/:id",( req, res,) => {
+  movieController.deleteMovie(req.params.id).then(function(results){
     res.json(results)
   })
 });

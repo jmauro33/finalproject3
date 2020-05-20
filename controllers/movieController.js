@@ -18,9 +18,8 @@ module.exports = {
             return result
         })
     },
-    deleteMovie: function(){
-        return db.Movie.remove({}).then(function(result){
-            console.log(result);
+    deleteMovie: function(id){
+        return db.Movie.findByIdAndRemove({ _id: id}).then(function(result){
             return result
         })
 

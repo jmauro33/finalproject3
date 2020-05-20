@@ -12,7 +12,7 @@ export default {
   retrive: function() {
     return axios.get("/movies/save");
   },
-  delete: function() {
-    return axios.delete("/movies/save");
+  delete: function(id) {
+    return axios.delete("/movies/save/"+ id);
   }
 };
