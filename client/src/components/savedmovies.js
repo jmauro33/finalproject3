@@ -20,7 +20,11 @@ class AppContainer extends Component {
       })
       // update the state with the resutls
     }
-     
+    handleDeleteMovie(){
+      
+    }
+
+
     render() {
       return (
         <Container>
@@ -36,6 +40,7 @@ class AppContainer extends Component {
                 released={movie.released}
                 plot={movie.plot}
                 isSaved = {true}
+                handleDeleteMovie={()=> this.handleDeleteMovie(this.state.result)}
               />
             ) 
           }): (
