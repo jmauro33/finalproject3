@@ -21,6 +21,7 @@ class AppContainer extends Component {
       
     }
     handleDeleteMovie(id){
+      console.log('DELETE MOVIE FUNCTION:', id)
       
       API.delete(id).then((results)=>{
         this.setState({result:results.data})
@@ -43,7 +44,7 @@ class AppContainer extends Component {
                 released={movie.released}
                 plot={movie.plot}
                 isSaved = {true}
-              
+                handleDeleteMovie={() => this.handleDeleteMovie(movie._id)}
               />
               
             ) 

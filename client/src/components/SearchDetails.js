@@ -9,10 +9,13 @@ function SearchDetails(props) {
       <h3>Released: {props.released}</h3>
       <h3>Plot: {props.plot}</h3>
       {props.isSaved ?
-      null : 
+       <button onClick={props.handleDeleteMovie} className="btn btn-primary">
+       Remove from List
+     </button>:
      <button onClick={props.handleSaveMovie} className="btn btn-primary">
           Save Movie
         </button> 
+
     }
       
     </div>
