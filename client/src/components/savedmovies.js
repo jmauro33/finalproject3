@@ -46,10 +46,9 @@ class AppContainer extends Component {
                 isSaved = {true}
                 handleDeleteMovie={() => this.handleDeleteMovie(movie._id)}
               />
-              
             ) 
           }): (
-                <h3>No Results to Display</h3>
+                <h3>No Movies Saved</h3>
               )}
           </Row>
         </Container>
