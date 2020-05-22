@@ -34,6 +34,7 @@ class AppContainer extends Component {
         <Container>
           <Nav></Nav>
           <Row>
+            
           {this.state.result.length > 0 ? this.state.result.map (movie => {
             return (
               <SearchDetails
