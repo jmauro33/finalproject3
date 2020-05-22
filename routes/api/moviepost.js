@@ -11,7 +11,7 @@ router.post("/save", (req, res) => {
 router.get("/save",( req, res) => {
   console.log("Test");
   movieController.retrieveMovie().then(function(results){
-   res.json(results)  
+   res.json(results? results: [])  
   })
  
 });
